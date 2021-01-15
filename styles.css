@@ -1,0 +1,87 @@
+.nav {
+    background: #902923;
+    padding: 50px;
+}
+
+.subtitle { 
+    background: #a22c29;
+    padding: 5px;
+}
+
+body {
+    background: #d6d5c9;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: .8em;
+    text-align: center;
+}
+
+a:link, a:visited, a:active, a:hover {
+    color: #902923;
+}
+
+h2 {
+    color: #e8eddf;
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5em;
+    margin: 0;
+    text-align: center;
+}
+
+h4 {
+    color: #e8eddf;
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    margin: 0;
+    text-align: center;
+}
+
+svg {
+    display: block;
+    margin: 0 auto;
+}
+
+.flow-text {
+    color: #c9cabb;
+    font-family: 'Sintony', sans-serif;
+    font-size: 1.1em;
+    margin: 10px;
+    text-align: center;
+}
+
+text {
+    color: #c9cabb;
+    font-family: 'Sintony', sans-serif;
+    font-size: .8em;
+}
+
+.btn, .btn:hover, .btn:active {
+    background: #1d2d44;
+    margin: 0 auto;
+    display: block;
+}
+
+.modal {
+    max-width: 500px;
+    background: #902923;
+    color: #000;
+}
+
+.input-field label, input {
+    color: #c9cabb;
+}
+
+.input-field input[type=text]:focus + label {
+    color: #c9cabb !important;
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #1d2d44 !important;
+    box-shadow: 0 1px 0 0 #1d2d44 !important;
+}
+
+.canvas {
+    margin-top: 40px;
+}

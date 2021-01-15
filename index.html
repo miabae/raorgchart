@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Sintony&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>RA Org Chart</title>
+</head>
+<body>
+    <div class="nav section">
+        <h2>RA Org Chart</h2>
+    </div>
+    <div class="subtitle" style="position: relative">
+        <p class="flow-text">Career Progression & People Management Chart</p>
+        <a href="#modal" class="btn btn-floating btn-large halfway-fab modal-trigger">
+            <i class="material-icons">add</i>
+        </a>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h4>Add Member:</h4>
+            <form>
+                <div class="input-field">
+                    <input type="text" id="name" placeholder="Member Name">
+                </div>                
+                <div class="input-field">
+                    <input type="text" id="parent" placeholder="Works under...">
+                </div>                
+                <div class="input-field">
+                    <input type="text" id="department" placeholder="Department">
+                </div>                
+                <div class="input-field">
+                    <button class="btn">Add +</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="canvas"></div>
+        </div>
+        <footer>
+            <h1>by: <a href="https://miabae.github.io/" target="_blank">Mia Bae</a></h1>
+        </footer>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyD_pVNkbUq_HdvMBL0VZfULxI_FAjvl7BI",
+        authDomain: "udemy-d3-firebase-bc7a8.firebaseapp.com",
+        projectId: "udemy-d3-firebase-bc7a8",
+        storageBucket: "udemy-d3-firebase-bc7a8.appspot.com",
+        messagingSenderId: "586964205113",
+        appId: "1:586964205113:web:f922d8ddf2f5d65fdf57e8"
+      };
+      firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        const settings = { timestampsInSnapshots: true };
+        db.settings(settings);
+    </script>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="index.js"></script>
+    <script src="graph.js"></script>
+</body>
+</html>
